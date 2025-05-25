@@ -1,0 +1,34 @@
+{
+	"name": "dungeon-sv-1",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+		"format": "prettier --write .",
+		"lint": "prettier --check ."
+	},
+	"devDependencies": {
+		"@sveltejs/vite-plugin-svelte": "^5.0.3",
+		"@tailwindcss/vite": "^4.0.0",
+		"@tsconfig/svelte": "^5.0.4",
+		"daisyui": "^5.0.37",
+		"mdsvex": "^0.12.3",
+		"prettier": "^3.4.2",
+		"prettier-plugin-svelte": "^3.3.3",
+		"prettier-plugin-tailwindcss": "^0.6.11",
+		"svelte": "^5.28.1",
+		"svelte-check": "^4.1.6",
+		"tailwindcss": "^4.0.0",
+		"typescript": "~5.8.3",
+		"vite": "^6.3.5"
+	},
+	"dependencies": {
+		"rot-js": "^2.2.1",
+		"sass": "^1.89.0",
+		"svelte-canvas": "^2.0.2"
+	}
+}

@@ -1,0 +1,40 @@
+:root {
+	--grid-cols: 50;
+	--grid-rows: 50;
+	--grid-size: 40px;
+}
+.rogue {
+	display: flex;
+	justify-content: center;
+}
+.rogue-grid {
+	display: grid;
+	grid-template-columns: repeat(var(--grid-cols), var(--grid-size));
+	grid-template-rows: repeat(var(--grid-rows), var(--grid-size));
+	gap: 0px;
+	padding: 0;
+
+	> * {
+		aspect-ratio: 1 / 1;
+		position: relative;
+		overflow: hidden;
+		padding: 0;
+
+		&.floor {
+			background-color: var(--color-marine-100);
+		}
+		&.item {
+			background-color: var(--color-marine-300);
+		}
+		&.door {
+			background-color: var(--color-marine-200);
+		}
+
+		> * {
+			display: grid;
+			width: 100%;
+			height: 100%;
+			place-content: center;
+		}
+	}
+}

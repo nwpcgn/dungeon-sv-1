@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+	name: 'retro';
+	default: false;
+	prefersdark: false;
+	color-scheme: 'light';
+	--color-base-100: oklch(91.637% 0.034 90.515);
+	--color-base-200: oklch(88.272% 0.049 91.774);
+	--color-base-300: oklch(84.133% 0.065 90.856);
+	--color-base-content: oklch(41% 0.112 45.904);
+	--color-primary: oklch(58% 0.158 241.966);
+	--color-primary-content: oklch(97% 0.013 236.62);
+	--color-secondary: oklch(55% 0.163 48.998);
+	--color-secondary-content: oklch(98% 0.022 95.277);
+	--color-accent: oklch(71% 0.202 349.761);
+	--color-accent-content: oklch(97% 0.014 343.198);
+	--color-neutral: oklch(44% 0.011 73.639);
+	--color-neutral-content: oklch(86% 0.005 56.366);
+	--color-info: oklch(58% 0.158 241.966);
+	--color-info-content: oklch(96% 0.059 95.617);
+	--color-success: oklch(51% 0.096 186.391);
+	--color-success-content: oklch(96% 0.059 95.617);
+	--color-warning: oklch(79% 0.184 86.047);
+	--color-warning-content: oklch(98% 0.026 102.212);
+	--color-error: oklch(57% 0.245 27.325);
+	--color-error-content: oklch(97% 0.013 17.38);
+	--radius-selector: 0.25rem;
+	--radius-field: 0.25rem;
+	--radius-box: 0.5rem;
+	--size-selector: 0.25rem;
+	--size-field: 0.25rem;
+	--border: 1px;
+	--depth: 0;
+	--noise: 0;
+}
+
+@layer base, components, utilities;
+
+@layer base {
+	body {
+		font-family: 'Fira Mono', monospace;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	hgroup {
+		font-family: 'Press Start 2P', system-ui;
+		font-weight: 500;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			padding: var(--spacing-xs) 0;
+		}
+
+		h2,
+		h4 {
+			font-weight: 400;
+		}
+
+		h1 {
+			@apply text-4xl;
+		}
+
+		h2 {
+			@apply text-3xl;
+		}
+
+		h3 {
+			@apply text-2xl;
+		}
+
+		h4 {
+			@apply text-xl;
+		}
+
+		h5 {
+			@apply text-lg;
+		}
+		h6 {
+			@apply text-sm;
+		}
+	}
+}

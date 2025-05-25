@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Press+Start+2P&family=Uncial+Antiqua&display=swap');
+
+:root {
+	--spacing-base-define: 1rem;
+	--page-width-define: 1024px;
+	--page-width-sm-define: 360px;
+	--app-body-scroll-y: hidden;
+	--app-main-scroll-y: hidden;
+	--page-animation-duration: 1.5s;
+	--page-animation-delay: 0.2s;
+	--page-transform-duration: 0.5s;
+	--page-transform-delay: 0.1s;
+}
+
+:root {
+	--page-width: var(--page-width-define);
+	--page-width-sm: var(--page-width-sm-define);
+	--body-scroll-y: var(--app-body-scroll-y, hidden);
+	--main-scroll-y: var(--app-main-scroll-y, hidden);
+	--spacing-base: var(--spacing-base-define);
+	--spacing-xs: calc(var(--spacing-base) * 0.25);
+	--spacing-sm: calc(var(--spacing-base) * 0.5);
+	--spacing-md: calc(var(--spacing-base) * 0.75);
+	--spacing-lg: calc(var(--spacing-base) * 1.5);
+	--spacing-xl: calc(var(--spacing-base) * 2);
+	--content-space: var(--spacing-base);
+	--page-space: var(--content-space);
+}
