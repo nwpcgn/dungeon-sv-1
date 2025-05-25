@@ -87,7 +87,7 @@
 	</main>
 	<aside class="sb border-l">
 		<div class="flex justify-center p-2">
-			<GridMiniMap tileSize={4}></GridMiniMap>
+			<GridMiniMap tileSize={5}></GridMiniMap>
 		</div>
 		<GameStats currentViewName={views[currentView].name}></GameStats>
 	</aside>
@@ -138,9 +138,24 @@
 				<div class="rogue-grid">
 					{#each game.grid.map as row, y}
 						{#each row as col, x}
-							<div>
-								{col}
-							</div>
+							{#if col === '#'}
+								<div class="bg-base-100">
+									<span class="sr-only">{col}</span>
+								</div>
+							{:else}
+								<div
+									class:room={col === '_'}
+									class:door={col === 'D'}
+									class:floor={col === '.'}>
+									{#if game.grid.hero.x == x && game.grid.hero.y == y}
+										<div class="bg-info">
+											<span class="sr-only">{col}</span>
+										</div>
+									{:else}
+										<span class="sr-only">{col}</span>
+									{/if}
+								</div>
+							{/if}
 						{/each}
 					{/each}
 				</div>

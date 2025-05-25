@@ -46,7 +46,7 @@
 			value: `${game.fighter.name}`
 		},
 		{
-			label: 'Helth',
+			label: 'Health',
 			value: `${game.fighter.hp}/${game.fighter.maxHp}`
 		},
 		{
