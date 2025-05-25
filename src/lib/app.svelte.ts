@@ -17,11 +17,7 @@ function shuffle(array) {
 
 	return array
 }
-export interface Game {
-	grid: Grid
-	fighter: Fighter
-	inventory?: InvenEntity[] | null
-}
+
 export interface Grid {
 	config: Config
 	map?: (string[] | null)[] | null
